@@ -172,3 +172,162 @@ This project demonstrates how the **Random Forest Classifier** can be used for c
 
 > **Note:** The dataset is synthetic and is intended for educational and algorithm demonstration purposes.
 
+# Gradient Boosting – Loan Approval Prediction
+
+## 📌 Project Overview
+
+This project demonstrates the use of the **Gradient Boosting Classifier** to predict whether a loan application is likely to be **approved or rejected**.
+
+The project is implemented using **Python and Google Colab/Jupyter Notebook** and focuses on understanding how Gradient Boosting can be applied to a binary classification problem.
+
+---
+
+## 🎯 Objective
+
+The objective is to build a machine learning model that predicts loan approval based on applicant and financial characteristics such as:
+
+* Applicant Income
+* Loan Amount
+* Credit Score
+* Employment Years
+* Existing Loans
+
+The target variable is:
+
+* `0` → Loan Rejected
+* `1` → Loan Approved
+
+---
+
+## 🤖 Machine Learning Algorithm
+
+###3. Gradient Boosting Classifier
+
+Gradient Boosting is an ensemble machine learning algorithm that builds decision trees sequentially. Each new tree attempts to improve the errors made by the previous trees.
+
+The workflow is:
+
+```text
+Loan Application Data
+        ↓
+Train/Test Split
+        ↓
+Gradient Boosting Classifier
+        ↓
+Loan Prediction
+        ↓
+Model Evaluation
+```
+
+The model is configured with:
+
+* `n_estimators = 100`
+* `learning_rate = 0.1`
+* `max_depth = 3`
+
+---
+
+## 📊 Dataset
+
+A synthetic dataset containing **1,000 loan applications** was generated using Python.
+
+### Features
+
+| Feature         | Description              |
+| --------------- | ------------------------ |
+| ApplicantIncome | Applicant's income       |
+| LoanAmount      | Requested loan amount    |
+| CreditScore     | Applicant's credit score |
+| EmploymentYears | Years of employment      |
+| ExistingLoans   | Number of existing loans |
+| LoanApproved    | Target variable          |
+
+The dataset was generated specifically for educational and algorithm demonstration purposes.
+
+---
+
+## ⚙️ Methodology
+
+The project follows these steps:
+
+1. Import required Python libraries
+2. Generate the loan application dataset
+3. Explore the dataset
+4. Visualize loan approval distribution
+5. Separate features and target
+6. Split data into training and testing sets
+7. Train the Gradient Boosting Classifier
+8. Generate predictions
+9. Evaluate model performance
+10. Analyze the confusion matrix
+11. Analyze feature importance
+12. Predict the result for a new loan application
+
+---
+
+## 📈 Evaluation Metrics
+
+The model is evaluated using:
+
+* **Accuracy**
+* **Precision**
+* **Recall**
+* **F1 Score**
+* **Confusion Matrix**
+
+Feature importance is also analyzed to understand which applicant characteristics contribute most to the model's predictions.
+
+---
+
+## 🔍 Key Demonstrations
+
+This project demonstrates:
+
+* Binary classification
+* Ensemble learning
+* Gradient boosting
+* Sequential decision-tree learning
+* Model evaluation
+* Confusion matrix analysis
+* Feature importance
+* Prediction for a new loan application
+
+---
+
+## 🛠️ Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Scikit-learn
+* Google Colab / Jupyter Notebook
+
+---
+
+## 📁 Project Files
+
+```text
+03_Gradient_Boosting_Loan_Approval.ipynb
+README.md
+```
+
+---
+
+## 🚀 How to Run
+
+1. Open the notebook in Google Colab or Jupyter Notebook.
+2. Run the cells sequentially.
+3. The synthetic dataset will be generated automatically.
+4. Train the Gradient Boosting model.
+5. Review the evaluation metrics and visualizations.
+6. Test the model using a new loan application.
+
+---
+
+## 📌 Conclusion
+
+This project demonstrates how the **Gradient Boosting Classifier** can be used for loan approval classification. It provides a practical introduction to ensemble learning, sequential tree-based modeling, classification evaluation, feature importance, and prediction using Python and Scikit-learn.
+
+> **Note:** The dataset is synthetic and is intended for educational and algorithm demonstration purposes only.
+
