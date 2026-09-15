@@ -326,6 +326,122 @@ README.md
 ---
 
 ## 📌 Conclusion
+-------------------
+# 4. K-Means Clustering – Customer Segmentation
+
+## 📌 Project Overview
+
+This project demonstrates the use of the **K-Means Clustering algorithm** for customer segmentation.
+
+Unlike supervised machine learning, K-Means is an **unsupervised learning algorithm**, meaning there is no predefined target variable. The algorithm identifies groups of customers based on similarities in their characteristics.
+
+The project is implemented using **Python and Google Colab/Jupyter Notebook**.
+
+---
+
+## 🎯 Objective
+
+The objective is to divide customers into meaningful groups based on:
+
+* Age
+* Annual Income
+* Spending Score
+* Purchases Per Year
+
+These groups can help businesses understand different customer segments and develop targeted marketing strategies.
+
+---
+
+## 🤖 Machine Learning Algorithm
+
+### K-Means Clustering
+
+K-Means is an unsupervised clustering algorithm that divides observations into a predefined number of clusters.
+
+The algorithm works by:
+
+1. Selecting the number of clusters (`K`)
+2. Initializing cluster centroids
+3. Assigning customers to the nearest centroid
+4. Recalculating centroids
+5. Repeating the process until the clusters stabilize
+
+The workflow is:
+
+```text
+Customer Data
+      ↓
+Feature Selection
+      ↓
+Feature Scaling
+      ↓
+Elbow Method
+      ↓
+Select K
+      ↓
+K-Means Clustering
+      ↓
+Customer Segments
+      ↓
+Cluster Analysis
+```
+
+---
+
+## 📊 Dataset
+
+A synthetic dataset containing **500 customer records** was generated using Python.
+
+### Features
+
+| Feature          | Description                           |
+| ---------------- | ------------------------------------- |
+| Age              | Customer age                          |
+| AnnualIncome     | Customer's annual income              |
+| SpendingScore    | Customer spending tendency from 1–100 |
+| PurchasesPerYear | Number of purchases made per year     |
+
+There is **no target variable** because this is an unsupervised learning problem.
+
+---
+
+## ⚙️ Methodology
+
+The project follows these steps:
+
+1. Import required Python libraries
+2. Generate the customer dataset
+3. Explore the dataset
+4. Visualize customers before clustering
+5. Select clustering features
+6. Standardize the features
+7. Apply the Elbow Method
+8. Select the number of clusters
+9. Train the K-Means model
+10. Assign customers to clusters
+11. Visualize the customer segments
+12. Analyze cluster centers
+13. Create customer segment profiles
+14. Assign a new customer to a cluster
+
+---
+
+## 📈 Elbow Method
+
+The **Elbow Method** is used to help determine an appropriate number of clusters.
+
+The method calculates the **inertia** for different values of K.
+
+The value of K is selected by examining where the decrease in inertia begins to slow down significantly.
+
+For this demonstration, **4 clusters** are used.
+
+---
+
+## 🔍 Customer Segmentation
+
+After applying K-Mea
+
 
 This project demonstrates how the **Gradient Boosting Classifier** can be used for loan approval classification. It provides a practical introduction to ensemble learning, sequential tree-based modeling, classification evaluation, feature importance, and prediction using Python and Scikit-learn.
 
