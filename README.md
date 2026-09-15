@@ -1,4 +1,6 @@
-# House Price Prediction with Linear Regression
+
+#ML_Assignments_Demo
+#1. House Price Prediction with Linear Regression
 
 This notebook demonstrates a simple linear regression model to predict house prices using the California Housing dataset. 
 
