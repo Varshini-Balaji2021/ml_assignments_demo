@@ -1,4 +1,3 @@
-
 #ML_Assignments_Demo
 #1. House Price Prediction with Linear Regression
 
@@ -446,4 +445,122 @@ After applying K-Mea
 This project demonstrates how the **Gradient Boosting Classifier** can be used for loan approval classification. It provides a practical introduction to ensemble learning, sequential tree-based modeling, classification evaluation, feature importance, and prediction using Python and Scikit-learn.
 
 > **Note:** The dataset is synthetic and is intended for educational and algorithm demonstration purposes only.
+-------------------------------------
+PROJECT 5:
+Artificial Neural Network – Credit Card Default Prediction
+📌 Project Overview
+
+This project demonstrates the use of an Artificial Neural Network (ANN) for predicting whether a credit card customer is likely to default on their next payment.
+
+The project is implemented in Python using Google Colab and follows a supervised machine learning classification workflow.
+
+🎯 Objective
+
+To build an Artificial Neural Network classification model that predicts:
+
+0 → No Default
+1 → Default
+
+The model is trained using customer credit-related information and evaluated using standard classification metrics.
+📊 Dataset
+
+Dataset: UCI Default of Credit Card Clients Dataset
+
+The dataset contains information about credit card customers, including demographic and credit/payment-related variables.
+
+Target variable:
+
+default payment next month
+
+The dataset contains 30,000 customer records and 24 input features.
+🤖 Algorithm
+Artificial Neural Network (ANN)
+
+The project uses MLPClassifier from Scikit-learn.
+
+Neural network configuration:
+
+Hidden Layer 1: 32 neurons
+Hidden Layer 2: 16 neurons
+Activation Function: ReLU
+Solver/Optimizer: Adam
+Maximum Iterations: 100
+Random State: 42
+🔄 Machine Learning Workflow
+Dataset
+   ↓
+Data Understanding
+   ↓
+Exploratory Data Analysis
+   ↓
+Feature & Target Separation
+   ↓
+Train-Test Split
+   ↓
+Feature Scaling
+   ↓
+Build ANN
+   ↓
+Train Model
+   ↓
+Make Predictions
+   ↓
+Model Evaluation
+   ↓
+New Customer Prediction
+🛠️ Technologies Used
+Python
+Google Colab
+Pandas
+NumPy
+Matplotlib
+Scikit-learn
+Joblib
+📈 Model Evaluation
+
+The ANN model is evaluated using:
+
+Accuracy
+Precision
+Recall
+F1 Score
+Confusion Matrix
+
+A training loss curve is also generated to visualize the learning behaviour of the neural network.
+🔮 New Customer Prediction
+
+After training, the ANN is used to predict whether a new customer is likely to default.
+
+The model also provides the predicted probability for:
+
+No Default
+Default
+💾 Model Saving
+
+The trained ANN model and feature scaler are saved using Joblib:
+ann_credit_default_model.pkl
+ann_scaler.pkl
+
+📚 Key Learning
+
+Through this project, the following concepts were demonstrated:
+
+Preparing a credit default dataset.
+Performing basic exploratory data analysis.
+Separating features and target variables.
+Splitting data into training and testing sets.
+Applying feature scaling.
+Building an Artificial Neural Network.
+Training a classification model.
+Evaluating model performance.
+Interpreting a confusion matrix.
+Visualizing the ANN training loss.
+Making predictions for a new customer.
+Saving the trained model.
+
+🏁 Conclusion
+This project demonstrates how an Artificial Neural Network can be applied to a supervised classification problem for credit card default prediction. The workflow covers data preparation, feature scaling, neural network training, model evaluation, and prediction on new customer data. This project corresponds to the Artificial Neural Networks topic included in the Machine Learning course syllabus.
+
+⚠️ Disclaimer
+This project is intended for educational and demonstration purposes. Model predictions should not be used as the sole basis for real-world credit decisions.
 
