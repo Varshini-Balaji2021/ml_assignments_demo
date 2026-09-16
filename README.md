@@ -563,4 +563,145 @@ This project demonstrates how an Artificial Neural Network can be applied to a s
 
 ⚠️ Disclaimer
 This project is intended for educational and demonstration purposes. Model predictions should not be used as the sole basis for real-world credit decisions.
+----------------------------------------------------------
+
+**Project Title:
+Iris Flower Classification using Machine Learning
+**
+1. PROJECT OVERVIEW
+
+This project implements a complete supervised machine learning classification workflow using the Iris dataset. The objective is to predict the species of an iris flower based on its sepal and petal measurements.
+
+The project covers data loading, data understanding, exploratory data analysis, preprocessing, train-test splitting, model training, model comparison, evaluation, and prediction on new observations.
+
+2. DATASET
+
+The Iris dataset contains 150 observations and 4 input features.
+
+Input Features:
+- Sepal Length (cm)
+- Sepal Width (cm)
+- Petal Length (cm)
+- Petal Width (cm)
+
+Target Classes:
+- Iris-setosa
+- Iris-versicolor
+- Iris-virginica
+
+Each species contains 50 observations, making the dataset balanced across the three classes.
+
+3. MACHINE LEARNING TYPE
+
+This is a supervised machine learning problem.
+
+Problem Type:
+Multiclass Classification
+
+The models learn from labelled training data and predict the species of an iris flower for previously unseen observations.
+
+4. EXPLORATORY DATA ANALYSIS
+
+Exploratory Data Analysis (EDA) was performed to understand the structure and characteristics of the dataset.
+
+The analysis included:
+- Dataset shape
+- Feature information
+- Statistical summary
+- Missing-value analysis
+- Class distribution
+- Feature distribution visualizations
+
+The dataset contains no missing values, and the three target classes are equally represented.
+
+5. DATA PREPROCESSING
+
+The dataset was divided into training and testing sets using an 80:20 split.
+
+Stratified sampling was used to maintain the class distribution between the training and testing datasets.
+
+Feature scaling was applied using StandardScaler for algorithms where feature scaling is useful, particularly Logistic Regression and K-Nearest Neighbors.
+
+6. MACHINE LEARNING ALGORITHMS
+
+Four classification algorithms were implemented and compared:
+
+- Logistic Regression
+- Decision Tree Classifier
+- Random Forest Classifier
+- K-Nearest Neighbors (KNN)
+
+Each model was trained using the training dataset and evaluated using the test dataset.
+
+7. MODEL EVALUATION
+
+The models were evaluated using:
+
+- Accuracy
+- Confusion Matrix
+- Precision
+- Recall
+- F1-Score
+- Classification Report
+
+Accuracy was used to compare the overall predictive performance of the different algorithms.
+
+The confusion matrix was used to understand the number of correctly and incorrectly classified observations for each Iris species.
+
+8. MODEL COMPARISON
+
+The accuracy of all four machine learning algorithms was compared.
+
+The model comparison helps identify how different classification algorithms perform on the same dataset.
+
+The model with the highest test-set accuracy in the experiment was identified as the best-performing model for this particular dataset and train-test split.
+
+The actual accuracy values should be taken from the results generated during execution of the notebook.
+
+9. PREDICTION
+
+The final trained model was also tested using a new flower observation containing:
+
+- Sepal Length
+- Sepal Width
+- Petal Length
+- Petal Width
+
+The model predicts one of the three Iris species based on these measurements.
+
+10. COMPLETE MACHINE LEARNING WORKFLOW
+
+The project follows this workflow:
+
+Iris Dataset
+→ Data Loading
+→ Data Understanding
+→ Exploratory Data Analysis
+→ Data Preprocessing
+→ Train-Test Split
+→ Feature Scaling
+→ Model Training
+→ Model Evaluation
+→ Model Comparison
+→ Final Model Selection
+→ New Data Prediction
+
+11. TECHNOLOGIES USED
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Google Colab
+
+12. CONCLUSION
+
+This project demonstrates a complete supervised machine learning classification workflow using the Iris dataset.
+
+Multiple classification algorithms were trained and evaluated using the same dataset. Their performance was compared using accuracy and additional classification metrics.
+
+The project provides a simple demonstration of how machine learning can be used to classify observations into multiple categories based on their input features.
+
+END OF PROJECT README
 
